@@ -12,7 +12,7 @@ Import-Module $PSScriptRoot\UIAutomation
 [UIAutomation.Preferences]::Highlight = $false
 
 # Start the demo application
-& Start-Process $PSScriptRoot\BlogDemoApp.exe
+Start-Process $PSScriptRoot\BlogDemoApp.exe
 
 # Get the main window for our application
 $MainWindow = Get-UiaWindow -Name "MainWindow" -Win32
